@@ -5,7 +5,7 @@
 RocketNews é uma simples landing page, que faz parte de ums dos desafios da plataforma de ensino da Rockeseat 🚀
 
 ## 💻 &nbsp;Deploy
-Veja o meu projeto por aqui: <a href="">RocketNews.</a>
+Veja o meu projeto por aqui: <a href="https://ricksonlberigo.github.io/rocketnews/">RocketNews.</a>
 
 ## 🛠 &nbsp;Tech Stack
 ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
