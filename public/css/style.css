@@ -1,0 +1,176 @@
+/* RESET GERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+
+  font-size: 62.5%;
+}
+
+/* ESTILOS GLOBAIS */
+
+body {
+  background: url(../img/background-image.jpg) no-repeat;
+  background-position: top right;
+  background-size: contain;
+  font-size: 1.6rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  width: 60%;
+  background: var(--body-bg-color);
+  padding: 3rem 9rem;
+  height: 100vh;
+  position: relative;
+}
+
+/* HEADER */
+
+header {
+  margin-bottom: 10rem;
+}
+
+/* TEXTS SECTION */
+
+.texts {
+  margin-bottom: 4rem;
+}
+
+.texts h1 {
+  color: var(--title-color);
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.texts h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.texts p {
+  color: var(--text-color);
+}
+
+/* FORM */
+
+.form-content {
+  margin-bottom: 4rem;
+}
+
+.form-content label {
+  color: var(--form-color);
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  display: block;
+}
+
+.form-content form input[type='email'] {
+  width: 80rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--form-color);
+}
+
+.form-content .input-btn {
+  display: inline-flex;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+.form-content .input-btn::before {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 4rem;
+  background: var(--title-color);
+}
+
+.form-content .input-btn .btn-submit {
+  background: var(--bg-button-color);
+  padding: 0.75rem 1.8rem;
+  display: flex;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* BACK */
+.back a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--bg-button-color);
+  font-weight: 700;
+}
+
+.back a img {
+  margin-left: 0.3125rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100vw;
+  }
+  .input-btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 802px) {
+  .input-btn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 549px) {
+  body {
+    background: var(--body-bg-color);
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem 2rem;
+  }
+}
